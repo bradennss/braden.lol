@@ -9,6 +9,7 @@ on:
 env:
   DOCKER_REPO: "${{ vars.DOCKER_REGISTRY }}/braden-lol"
   IMAGE_NAME: "website"
+  TERRAFORM_DIR: "terraform"
 
 jobs:
   build-and-deploy:
@@ -48,8 +49,10 @@ jobs:
             ${{ env.DOCKER_REPO }}/${{ env.IMAGE_NAME }}:v${{ steps.version.outputs.current-version }}
             ${{ env.DOCKER_REPO }}/${{ env.IMAGE_NAME }}:latest
       - name: Terraform init
+        working-directory: ${{ env.TERRAFORM_DIR }}
         run: terraform init
       - name: Terraform apply
+        working-directory: ${{ env.TERRAFORM_DIR }}
         env:
           NOMAD_ADDR: ${{ vars.NOMAD_ADDR }}
           NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
