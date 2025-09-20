@@ -50,6 +50,10 @@ jobs:
             ${{ env.DOCKER_REPO }}/${{ env.IMAGE_NAME }}:latest
       - name: Terraform init
         working-directory: ${{ env.TERRAFORM_DIR }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.TF_STATE_R2_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.TF_STATE_R2_SECRET_KEY }}
+          AWS_ENDPOINT_URL_S3: ${{ vars.TF_STATE_R2_ENDPOINT_URL }}
         run: terraform init
       - name: Terraform apply
         working-directory: ${{ env.TERRAFORM_DIR }}
