@@ -56,5 +56,8 @@ jobs:
         env:
           NOMAD_ADDR: ${{ vars.NOMAD_ADDR }}
           NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.TF_STATE_R2_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.TF_STATE_R2_SECRET_KEY }}
+          AWS_ENDPOINT_URL_S3: ${{ vars.TF_STATE_R2_ENDPOINT_URL }}
           TF_VAR_website_image_tag: ${{ env.DOCKER_REPO }}/${{ env.IMAGE_NAME }}:v${{ steps.version.outputs.current-version }}
         run: terraform apply -auto-approve -input=false
