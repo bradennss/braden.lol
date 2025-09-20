@@ -43,6 +43,7 @@ const abcDiatypeMono = localFont({
 
 export const metadata: Metadata = {
   title: "braden.lol",
+  metadataBase: new URL("https://braden.lol"),
 };
 
 const RootLayout = memo<PropsWithChildren>(({ children }) => {
