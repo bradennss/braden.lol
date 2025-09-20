@@ -28,6 +28,4 @@ resource "nomad_job" "website" {
     memory     = 100
     image_tag  = var.website_image_tag
   })
-
-  depends_on = [nomad_variable.vars]
 }
