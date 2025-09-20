@@ -23,7 +23,7 @@ job "website" {
 
     service {
       name = "${namespace}-website"
-      port = "braden-lol"
+      port = "website"
 
       tags = [
         "traefik.enable=true",
