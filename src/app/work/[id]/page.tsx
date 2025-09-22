@@ -22,7 +22,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Work / ${project.name}`,
+    title: `Braden / Work / ${project.name}`,
   };
 }
 
