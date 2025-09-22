@@ -58,7 +58,7 @@ export const clientProjects: ClientProject[] = [
     ],
   },
   {
-    id: "chalksheads",
+    id: "chalkheads",
     name: "Chalkhead's Playground",
     url: "https://chalkheadsplayground.com",
     images: [

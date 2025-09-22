@@ -44,7 +44,7 @@ const abcDiatypeMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Braden",
+  title: "braden.lol",
   metadataBase: new URL(BASE_URL),
 };
 

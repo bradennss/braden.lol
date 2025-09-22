@@ -22,7 +22,10 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Braden / Work / ${project.name}`,
+    title: `braden.lol / work / ${project.name.toLowerCase()}`,
+    openGraph: {
+      images: project.images[0],
+    },
   };
 }
 
@@ -38,11 +41,11 @@ const ClientProjectPage = memo<{ params: Promise<{ id: string }> }>(
       <main>
         <div className="w-full max-w-2xl mr-auto px-4 pt-8 pb-8 flex flex-col gap-8">
           <div className="flex flex-col gap-2">
-            <h1 className="text-2xl font-semibold min-w-0">
+            <h1 className="text-2xl font-semibold lowercase">
               <Link prefetch href="/">
                 <span className="font-semibold">Work</span>
               </Link>
-              <span className="text-foreground/25 select-none"> / </span>
+              <span className="text-foreground/25 font-normal"> / </span>
               <span>{project.name}</span>
             </h1>
             {project.url && (
