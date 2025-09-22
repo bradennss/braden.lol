@@ -1,28 +1,31 @@
 import assert from "assert";
-import Image from "next/image";
 import Link from "next/link";
 import { memo } from "react";
+import { ImageCard } from "~/components/image-card";
 import { ClientProject, clientProjects } from "~/data";
 
 export const dynamic = "force-dynamic";
 
-const ClientProjectCard = memo<{ project: ClientProject }>(({ project }) => {
-  const [firstImage] = project.images;
-  assert(firstImage, `missing first image for project ${project.name}`);
+export const ClientProjectCard = memo<{ project: ClientProject }>(
+  ({ project }) => {
+    const [firstImage] = project.images;
+    assert(firstImage, `missing first image for project ${project.name}`);
 
-  return (
-    <Link prefetch href={`/work/${project.id}`} className="group">
-      <Image
-        priority
-        loading="eager"
-        unoptimized
-        src={firstImage}
-        alt={project.name}
-        className="w-full h-auto border border-foreground"
-      />
-    </Link>
-  );
-});
+    return (
+      <Link prefetch href={`/work/${project.id}`} className="group">
+        <ImageCard
+          src={firstImage}
+          alt={project.name}
+          priority
+          loading="eager"
+          unoptimized
+          draggable={false}
+          className="w-full aspect-[1440/900] border border-foreground select-none"
+        />
+      </Link>
+    );
+  }
+);
 ClientProjectCard.displayName = "ClientProjectCard";
 
 const HomePage = memo(async () => {

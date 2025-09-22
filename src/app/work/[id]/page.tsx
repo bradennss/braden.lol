@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { memo } from "react";
+import { ImageCard } from "~/components/image-card";
 import { clientProjects } from "~/data";
 
 function formatUrl(url: string) {
@@ -57,14 +57,15 @@ const ClientProjectPage = memo<{ params: Promise<{ id: string }> }>(
           </div>
           <div className="grid grid-cols-1 gap-4">
             {project.images.map((image, index) => (
-              <Image
+              <ImageCard
                 key={index}
+                src={image}
+                alt={project.name}
                 priority
                 loading="eager"
                 unoptimized
-                src={image}
-                alt={project.name}
-                className="w-full h-auto border border-foreground"
+                draggable={false}
+                className="w-full aspect-[1440/900] border border-foreground select-none"
               />
             ))}
           </div>
