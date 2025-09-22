@@ -61,6 +61,7 @@ const ClientProjectPage = memo<{ params: Promise<{ id: string }> }>(
                 key={index}
                 priority
                 loading="eager"
+                unoptimized
                 src={image}
                 alt={project.name}
                 className="w-full h-auto border border-foreground"

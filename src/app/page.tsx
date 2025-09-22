@@ -13,6 +13,9 @@ const ClientProjectCard = memo<{ project: ClientProject }>(({ project }) => {
   return (
     <Link prefetch href={`/work/${project.id}`} className="group">
       <Image
+        priority
+        loading="eager"
+        unoptimized
         src={firstImage}
         alt={project.name}
         className="w-full h-auto border border-foreground"
