@@ -8,14 +8,14 @@ import { cn } from "~/utils";
 export type ImageCardProps = { className?: string } & Omit<ImageProps, "fill">;
 
 export const ImageCard = memo<ImageCardProps>(
-  ({ className, onLoad, ...imageProps }) => {
+  ({ className, alt, onLoad, ...imageProps }) => {
     const [imageIsLoaded, setImageIsLoaded] = useState(false);
     const handleImageLoaded = useCallback(
       (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
         setImageIsLoaded(true);
         onLoad?.(event);
       },
-      []
+      [onLoad]
     );
 
     return (
@@ -31,6 +31,7 @@ export const ImageCard = memo<ImageCardProps>(
         <Image
           {...imageProps}
           fill
+          alt={alt}
           onLoad={handleImageLoaded}
           className={cn(
             "object-fit",
