@@ -64,8 +64,6 @@ const ClientProjectPage = memo<{ params: Promise<{ id: string }> }>(
                 key={index}
                 src={image}
                 alt={project.name}
-                priority
-                loading="eager"
                 unoptimized
                 draggable={false}
                 className="w-full aspect-[1440/900] border border-foreground select-none"
