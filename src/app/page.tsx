@@ -4,8 +4,6 @@ import { memo } from "react";
 import { ImageCard } from "~/components/image-card";
 import { ClientProject, clientProjects } from "~/data";
 
-export const dynamic = "force-dynamic";
-
 export const ClientProjectCard = memo<{ project: ClientProject }>(
   ({ project }) => {
     const [firstImage] = project.images;

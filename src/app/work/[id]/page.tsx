@@ -8,8 +8,6 @@ function formatUrl(url: string) {
   return url.replace(/^https?:\/\//, "");
 }
 
-export const dynamic = "force-dynamic";
-
 export async function generateMetadata({
   params,
 }: {
