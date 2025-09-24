@@ -8,6 +8,7 @@ export const assets = {
       freeImage: `${CDN_URL}/client-projects/amriel-free.png`,
       galleryImage: `${CDN_URL}/client-projects/amriel-gallery.png`,
       homeImage: `${CDN_URL}/client-projects/amriel-home.png`,
+      homeVideo: `${CDN_URL}/client-projects/amriel-home.mp4`,
       productImage: `${CDN_URL}/client-projects/amriel-product.png`,
       productsImage: `${CDN_URL}/client-projects/amriel-products.png`,
     },
@@ -21,9 +22,11 @@ export const assets = {
       game4Image: `${CDN_URL}/client-projects/awaken-game-4.png`,
       gameEnterImage: `${CDN_URL}/client-projects/awaken-game-enter.png`,
       homeImage: `${CDN_URL}/client-projects/awaken-home.png`,
+      homeVideo: `${CDN_URL}/client-projects/awaken-home.mp4`,
     },
     chalkheads: {
       bootImage: `${CDN_URL}/client-projects/chalkheads-boot.png`,
+      bootVideo: `${CDN_URL}/client-projects/chalkheads-boot.mp4`,
       browseImage: `${CDN_URL}/client-projects/chalkheads-browse.png`,
       homeImage: `${CDN_URL}/client-projects/chalkheads-home.png`,
       preview1Image: `${CDN_URL}/client-projects/chalkheads-preview-1.png`,
@@ -38,6 +41,7 @@ export const assets = {
       termsImage: `${CDN_URL}/client-projects/comunal-terms.png`,
     },
     mokk: {
+      homeVideo: `${CDN_URL}/client-projects/mokk-home.mp4`,
       home1Image: `${CDN_URL}/client-projects/mokk-home-1.png`,
       home2Image: `${CDN_URL}/client-projects/mokk-home-2.png`,
       home3Image: `${CDN_URL}/client-projects/mokk-home-3.png`,
@@ -45,6 +49,7 @@ export const assets = {
     wins: {
       codesSectionImage: `${CDN_URL}/client-projects/wins-codes-section.png`,
       homeImage: `${CDN_URL}/client-projects/wins-home.png`,
+      homeVideo: `${CDN_URL}/client-projects/wins-home.mp4`,
       missionSectionImage: `${CDN_URL}/client-projects/wins-mission-section.png`,
       photoGridImage: `${CDN_URL}/client-projects/wins-photo-grid.png`,
       productImage: `${CDN_URL}/client-projects/wins-product.png`,

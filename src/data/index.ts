@@ -8,6 +8,7 @@ export const clientProjects: ClientProject[] = [
     id: "wins",
     name: "Wins",
     url: "https://forms.co/wins",
+    videos: [assets.clientProjects.wins.homeVideo],
     images: [
       assets.clientProjects.wins.homeImage,
       assets.clientProjects.wins.missionSectionImage,
@@ -22,6 +23,7 @@ export const clientProjects: ClientProject[] = [
     id: "awaken",
     name: "Awaken",
     url: "https://4w4k3n.com",
+    videos: [assets.clientProjects.awaken.homeVideo],
     images: [
       assets.clientProjects.awaken.homeImage,
       assets.clientProjects.awaken.aboutImage,
@@ -37,6 +39,7 @@ export const clientProjects: ClientProject[] = [
     id: "amriel",
     name: "Amriel",
     url: "https://amriel.org",
+    videos: [assets.clientProjects.amriel.homeVideo],
     images: [
       assets.clientProjects.amriel.homeImage,
       assets.clientProjects.amriel.productImage,
@@ -51,6 +54,7 @@ export const clientProjects: ClientProject[] = [
     id: "mokk",
     name: "Mokk",
     url: "https://mokk.co",
+    videos: [assets.clientProjects.mokk.homeVideo],
     images: [
       assets.clientProjects.mokk.home1Image,
       assets.clientProjects.mokk.home2Image,
@@ -61,6 +65,7 @@ export const clientProjects: ClientProject[] = [
     id: "chalkheads",
     name: "Chalkhead's Playground",
     url: "https://chalkheadsplayground.com",
+    videos: [assets.clientProjects.chalkheads.bootVideo],
     images: [
       assets.clientProjects.chalkheads.bootImage,
       assets.clientProjects.chalkheads.homeImage,
@@ -75,6 +80,7 @@ export const clientProjects: ClientProject[] = [
     id: "comunal",
     name: "Comunal",
     url: "https://comunal.nyc",
+    videos: [],
     images: [
       assets.clientProjects.comunal.homeImage,
       assets.clientProjects.comunal.menuImage,

@@ -1,23 +1,20 @@
-import assert from "assert";
 import Link from "next/link";
 import { memo } from "react";
-import { ImageCard } from "~/components/image-card";
 import { ClientProject, clientProjects } from "~/data";
+import { ImageCard, VideoCard } from "./client";
 
 export const ClientProjectCard = memo<{ project: ClientProject }>(
   ({ project }) => {
+    const [firstVideo] = project.videos;
     const [firstImage] = project.images;
-    assert(firstImage, `missing first image for project ${project.name}`);
 
     return (
       <Link prefetch href={`/work/${project.id}`} className="group">
-        <ImageCard
-          src={firstImage}
-          alt={project.name}
-          unoptimized
-          draggable={false}
-          className="w-full aspect-[1440/900] border border-foreground select-none"
-        />
+        {firstVideo ? (
+          <VideoCard src={firstVideo} />
+        ) : firstImage ? (
+          <ImageCard src={firstImage} alt={project.name} />
+        ) : null}
       </Link>
     );
   }

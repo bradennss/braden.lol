@@ -1,8 +1,9 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { memo } from "react";
-import { ImageCard } from "~/components/image-card";
 import { clientProjects } from "~/data";
+import { ImageCard, VideoCard } from "./client";
 
 function formatUrl(url: string) {
   return url.replace(/^https?:\/\//, "");
@@ -12,7 +13,7 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ id: string }>;
-}) {
+}): Promise<Metadata> {
   const { id } = await params;
   const project = clientProjects.find((project) => project.id === id);
   if (!project) {
@@ -22,7 +23,8 @@ export async function generateMetadata({
   return {
     title: `braden.lol / work / ${project.name.toLowerCase()}`,
     openGraph: {
-      images: project.images[0],
+      videos: project.videos.map((video) => ({ url: video })),
+      images: project.images.map((image) => ({ url: image })),
     },
   };
 }
@@ -57,15 +59,11 @@ const ClientProjectPage = memo<{ params: Promise<{ id: string }> }>(
             )}
           </div>
           <div className="grid grid-cols-1 gap-4">
+            {project.videos.map((video, index) => (
+              <VideoCard key={index} src={video} />
+            ))}
             {project.images.map((image, index) => (
-              <ImageCard
-                key={index}
-                src={image}
-                alt={project.name}
-                unoptimized
-                draggable={false}
-                className="w-full aspect-[1440/900] border border-foreground select-none"
-              />
+              <ImageCard key={index} src={image} alt={project.name} />
             ))}
           </div>
         </div>
