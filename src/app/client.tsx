@@ -33,7 +33,10 @@ export const VideoCard = memo<{ src: string }>(({ src }) => {
   const handleLoaded = useCallback(() => setIsLoaded(true), []);
 
   return (
-    <MediaContainer loading={!isLoaded} className="w-full aspect-[1440/900]">
+    <MediaContainer
+      loading={!isLoaded}
+      className="w-full aspect-[1440/900] h-auto"
+    >
       <video
         src={src}
         autoPlay
@@ -42,7 +45,7 @@ export const VideoCard = memo<{ src: string }>(({ src }) => {
         loop
         controls={false}
         onCanPlayThrough={handleLoaded}
-        className={cn("object-fit", isLoaded ? "opacity-100" : "opacity-0")}
+        className={cn("object-center", isLoaded ? "opacity-100" : "opacity-0")}
       />
     </MediaContainer>
   );

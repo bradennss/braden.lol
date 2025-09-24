@@ -10,7 +10,7 @@ export const MediaContainer = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "relative aspect-video border border-foreground bg-linear-to-b from-foreground/5 to-foreground/25",
+        "relative aspect-video overflow-hidden border border-foreground bg-linear-to-b from-foreground/5 to-foreground/25",
         className
       )}
       {...props}
