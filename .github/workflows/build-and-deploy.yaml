@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: build-and-deploy
+  cancel-in-progress: true
+
 env:
   DOCKER_REPO: "${{ vars.DOCKER_REGISTRY }}/braden-lol"
   IMAGE_NAME: "website"
