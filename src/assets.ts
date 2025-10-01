@@ -29,10 +29,12 @@ export const assets = {
       loginInteractionVideo: `${CDN_URL}/client-projects/chalkheads-login-interaction.mp4`,
     },
     comunal: {
-      homeImage: `${CDN_URL}/client-projects/comunal-home.png`,
-      menuImage: `${CDN_URL}/client-projects/comunal-menu.png`,
-      privacyImage: `${CDN_URL}/client-projects/comunal-privacy.png`,
-      termsImage: `${CDN_URL}/client-projects/comunal-terms.png`,
+      careersImage: `${CDN_URL}/client-projects/comunal-careers.png`,
+      homeImage: `${CDN_URL}/client-projects/comunal-home.png?v=2`,
+      menuImage: `${CDN_URL}/client-projects/comunal-menu.png?v=2`,
+      privacyImage: `${CDN_URL}/client-projects/comunal-privacy.png?v=2`,
+      reservationsImage: `${CDN_URL}/client-projects/comunal-reservations.png`,
+      termsImage: `${CDN_URL}/client-projects/comunal-terms.png?v=2`,
     },
     mokk: {
       homeVideo: `${CDN_URL}/client-projects/mokk-home.mp4?v=2`,
