@@ -3,14 +3,14 @@ import { CDN_URL } from "./const";
 export const assets = {
   clientProjects: {
     amriel: {
-      aboutImage: `${CDN_URL}/client-projects/amriel-about.png`,
-      createImage: `${CDN_URL}/client-projects/amriel-create.png`,
-      freeImage: `${CDN_URL}/client-projects/amriel-free.png`,
-      galleryImage: `${CDN_URL}/client-projects/amriel-gallery.png`,
-      homeImage: `${CDN_URL}/client-projects/amriel-home.png`,
+      aboutInteractionsVideo: `${CDN_URL}/client-projects/amriel-about-interactions.mp4`,
+      cartInteractionsVideo: `${CDN_URL}/client-projects/amriel-cart-interactions.mp4`,
+      createInteractionsVideo: `${CDN_URL}/client-projects/amriel-create-interactions.mp4`,
+      galleryScrollVideo: `${CDN_URL}/client-projects/amriel-gallery-scroll.mp4`,
+      homeDragInteractionsVideo: `${CDN_URL}/client-projects/amriel-home-drag-interactions.mp4`,
       homeVideo: `${CDN_URL}/client-projects/amriel-home.mp4`,
-      productImage: `${CDN_URL}/client-projects/amriel-product.png`,
-      productsImage: `${CDN_URL}/client-projects/amriel-products.png`,
+      notesInteractionsVideo: `${CDN_URL}/client-projects/amriel-notes-interactions.mp4`,
+      shopInteractionsVideo: `${CDN_URL}/client-projects/amriel-shop-interactions.mp4`,
     },
     awaken: {
       aboutTextImage: `${CDN_URL}/client-projects/awaken-about-text.png`,

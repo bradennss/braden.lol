@@ -68,6 +68,7 @@ const ClientProjectPage = memo<{ params: Promise<{ id: string }> }>(
               type={media.type}
               src={media.src}
               alt={media.alt ?? project.name}
+              style={{ aspectRatio: `${media.width}/${media.height}` }}
             />
           ))}
         </div>

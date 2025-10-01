@@ -4,6 +4,8 @@ export type Media = {
   type: MediaType;
   src: string;
   alt?: string;
+  width: number;
+  height: number;
 };
 
 export type ClientProject = {

@@ -20,7 +20,7 @@ export const MediaDisplay = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "relative aspect-video overflow-hidden border border-foreground bg-linear-to-b from-foreground/5 to-foreground/25",
+        "relative flex items-center justify-center aspect-video overflow-hidden border border-foreground bg-linear-to-b from-foreground/5 to-foreground/25",
         className
       )}
       {...props}
@@ -39,7 +39,10 @@ export const MediaDisplay = forwardRef<
           unoptimized
           fill
           onLoad={handleLoaded}
-          className={cn("object-fit", isLoaded ? "opacity-100" : "opacity-0")}
+          className={cn(
+            "object-cover object-center",
+            isLoaded ? "opacity-100" : "opacity-0"
+          )}
         />
       ) : (
         <video
@@ -51,7 +54,7 @@ export const MediaDisplay = forwardRef<
           controls={false}
           onCanPlayThrough={handleLoaded}
           className={cn(
-            "object-center",
+            "object-cover object-center",
             isLoaded ? "opacity-100" : "opacity-0"
           )}
         />

@@ -13,6 +13,7 @@ export const ClientProjectCard = memo<{ project: ClientProject }>(
           type={firstMedia.type}
           src={firstMedia.src}
           alt={firstMedia.alt ?? project.name}
+          style={{ aspectRatio: `${firstMedia.width}/${firstMedia.height}` }}
         />
       </Link>
     );
