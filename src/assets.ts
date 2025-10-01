@@ -50,4 +50,17 @@ export const assets = {
       scrollVideo: `${CDN_URL}/client-projects/wins-scroll.mp4`,
     },
   },
+  personalProjects: {
+    tinytanks: {
+      dmGameplayVideo: `${CDN_URL}/personal-projects/tinytanks-dm-gameplay.mp4`,
+      kothGameplayVideo: `${CDN_URL}/personal-projects/tinytanks-koth-gameplay.mp4`,
+      leaderboardInteractionsVideo: `${CDN_URL}/personal-projects/tinytanks-leaderboard-interactions.mp4`,
+      loginInteractionVideo: `${CDN_URL}/personal-projects/tinytanks-login-interaction.mp4`,
+      ltsGameplayVideo: `${CDN_URL}/personal-projects/tinytanks-lts-gameplay.mp4`,
+      previewVideo: `${CDN_URL}/personal-projects/tinytanks-preview.mp4`,
+      profileInteractionsVideo: `${CDN_URL}/personal-projects/tinytanks-profile-interactions.mp4`,
+      spGameplayVideo: `${CDN_URL}/personal-projects/tinytanks-sp-gameplay.mp4`,
+      tdmGameplayVideo: `${CDN_URL}/personal-projects/tinytanks-tdm-gameplay.mp4`,
+    },
+  },
 };

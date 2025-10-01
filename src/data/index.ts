@@ -1,5 +1,5 @@
 import { assets } from "~/assets";
-import { ClientProject } from "./types";
+import { ClientProject, PersonalProject } from "./types";
 
 export * from "./types";
 
@@ -246,6 +246,70 @@ export const clientProjects: ClientProject[] = [
       {
         type: "video",
         src: assets.clientProjects.comunalMembers.homeVideo,
+        width: 638,
+        height: 398,
+      },
+    ],
+  },
+];
+
+export const personalProjects: PersonalProject[] = [
+  {
+    id: "tinytanks",
+    name: "Tiny Tanks",
+    url: "https://tinytanks.io",
+    media: [
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.previewVideo,
+        width: 638,
+        height: 398,
+      },
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.tdmGameplayVideo,
+        width: 638,
+        height: 398,
+      },
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.ltsGameplayVideo,
+        width: 638,
+        height: 398,
+      },
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.kothGameplayVideo,
+        width: 638,
+        height: 398,
+      },
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.spGameplayVideo,
+        width: 638,
+        height: 398,
+      },
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.dmGameplayVideo,
+        width: 638,
+        height: 398,
+      },
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.loginInteractionVideo,
+        width: 638,
+        height: 398,
+      },
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.profileInteractionsVideo,
+        width: 638,
+        height: 398,
+      },
+      {
+        type: "video",
+        src: assets.personalProjects.tinytanks.leaderboardInteractionsVideo,
         width: 638,
         height: 398,
       },

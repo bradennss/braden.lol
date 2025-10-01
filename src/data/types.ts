@@ -14,3 +14,10 @@ export type ClientProject = {
   url?: string;
   media: Media[];
 };
+
+export type PersonalProject = {
+  id: string;
+  name: string;
+  url?: string;
+  media: Media[];
+};
