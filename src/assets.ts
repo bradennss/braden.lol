@@ -24,14 +24,9 @@ export const assets = {
       protectedFormInteractionVideo: `${CDN_URL}/client-projects/awaken-protected-form-interaction.mp4`,
     },
     chalkheads: {
-      bootImage: `${CDN_URL}/client-projects/chalkheads-boot.png`,
-      bootVideo: `${CDN_URL}/client-projects/chalkheads-boot.mp4`,
-      browseImage: `${CDN_URL}/client-projects/chalkheads-browse.png`,
-      homeImage: `${CDN_URL}/client-projects/chalkheads-home.png`,
-      preview1Image: `${CDN_URL}/client-projects/chalkheads-preview-1.png`,
-      preview2Image: `${CDN_URL}/client-projects/chalkheads-preview-2.png`,
-      preview3Image: `${CDN_URL}/client-projects/chalkheads-preview-3.png`,
-      watchImage: `${CDN_URL}/client-projects/chalkheads-watch.png`,
+      bootVideo: `${CDN_URL}/client-projects/chalkheads-boot.mp4?v=2`,
+      previewInteractionVideo: `${CDN_URL}/client-projects/chalkheads-preview-interaction.mp4`,
+      loginInteractionVideo: `${CDN_URL}/client-projects/chalkheads-login-interaction.mp4`,
     },
     comunal: {
       homeImage: `${CDN_URL}/client-projects/comunal-home.png`,
