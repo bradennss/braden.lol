@@ -47,14 +47,11 @@ export const assets = {
       home3Image: `${CDN_URL}/client-projects/mokk-home-3.png`,
     },
     wins: {
-      codesSectionImage: `${CDN_URL}/client-projects/wins-codes-section.png`,
-      homeImage: `${CDN_URL}/client-projects/wins-home.png`,
+      codesInteractionVideo: `${CDN_URL}/client-projects/wins-codes-interaction.mp4`,
+      enlistInteractionVideo: `${CDN_URL}/client-projects/wins-enlist-interaction.mp4`,
       homeVideo: `${CDN_URL}/client-projects/wins-home.mp4`,
-      missionSectionImage: `${CDN_URL}/client-projects/wins-mission-section.png`,
-      photoGridImage: `${CDN_URL}/client-projects/wins-photo-grid.png`,
-      productImage: `${CDN_URL}/client-projects/wins-product.png`,
-      sizeChartImage: `${CDN_URL}/client-projects/wins-size-chart.png`,
-      teaserGridImage: `${CDN_URL}/client-projects/wins-teaser-grid.png`,
+      productScrollVideo: `${CDN_URL}/client-projects/wins-product-scroll.mp4`,
+      scrollVideo: `${CDN_URL}/client-projects/wins-scroll.mp4`,
     },
   },
 };
