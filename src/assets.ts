@@ -36,6 +36,9 @@ export const assets = {
       reservationsImage: `${CDN_URL}/client-projects/comunal-reservations.png`,
       termsImage: `${CDN_URL}/client-projects/comunal-terms.png?v=2`,
     },
+    comunalMembers: {
+      homeVideo: `${CDN_URL}/client-projects/comunal-members-home.mp4`,
+    },
     mokk: {
       homeVideo: `${CDN_URL}/client-projects/mokk-home.mp4?v=2`,
     },

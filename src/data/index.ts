@@ -238,4 +238,17 @@ export const clientProjects: ClientProject[] = [
       },
     ],
   },
+  {
+    id: "comunal-members",
+    name: "Comunal Members",
+    url: "https://members.comunal.nyc",
+    media: [
+      {
+        type: "video",
+        src: assets.clientProjects.comunalMembers.homeVideo,
+        width: 638,
+        height: 398,
+      },
+    ],
+  },
 ];
