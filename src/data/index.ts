@@ -165,26 +165,8 @@ export const clientProjects: ClientProject[] = [
       {
         type: "video",
         src: assets.clientProjects.mokk.homeVideo,
-        width: 1920,
-        height: 1080,
-      },
-      {
-        type: "image",
-        src: assets.clientProjects.mokk.home1Image,
-        width: 1920,
-        height: 1080,
-      },
-      {
-        type: "image",
-        src: assets.clientProjects.mokk.home2Image,
-        width: 1920,
-        height: 1080,
-      },
-      {
-        type: "image",
-        src: assets.clientProjects.mokk.home3Image,
-        width: 1920,
-        height: 1080,
+        width: 638,
+        height: 398,
       },
     ],
   },

@@ -40,10 +40,7 @@ export const assets = {
       termsImage: `${CDN_URL}/client-projects/comunal-terms.png`,
     },
     mokk: {
-      homeVideo: `${CDN_URL}/client-projects/mokk-home.mp4`,
-      home1Image: `${CDN_URL}/client-projects/mokk-home-1.png`,
-      home2Image: `${CDN_URL}/client-projects/mokk-home-2.png`,
-      home3Image: `${CDN_URL}/client-projects/mokk-home-3.png`,
+      homeVideo: `${CDN_URL}/client-projects/mokk-home.mp4?v=2`,
     },
     wins: {
       codesInteractionVideo: `${CDN_URL}/client-projects/wins-codes-interaction.mp4`,
