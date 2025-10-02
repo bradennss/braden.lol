@@ -46,15 +46,15 @@ PersonalProjectCard.displayName = "PersonalProjectCard";
 
 const HomePage = memo(async () => {
   return (
-    <main className="w-full max-w-2xl mx-auto px-4 pt-8 pb-8 flex flex-col gap-8">
+    <main className="w-full px-4 pt-8 pb-8 flex flex-col gap-8">
       <h1 className="text-2xl font-semibold lowercase">Work</h1>
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {clientProjects.map((project) => (
           <ClientProjectCard key={project.id} project={project} />
         ))}
       </div>
       <h1 className="text-2xl font-semibold lowercase">Projects</h1>
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {personalProjects.map((project) => (
           <PersonalProjectCard key={project.id} project={project} />
         ))}
