@@ -21,8 +21,9 @@ export async function generateMetadata({
   }
 
   return {
-    title: `braden.lol / projects / ${project.name.toLowerCase()}`,
+    title: project.name,
     openGraph: {
+      siteName: "Braden",
       videos: project.media
         .filter((media) => media.type === "video")
         .map((media) => ({ url: media.src })),

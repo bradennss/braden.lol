@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { memo } from "react";
 
 export const metadata: Metadata = {
-  title: "braden.lol/404",
+  title: "Braden",
 };
 
 const NotFoundPage = memo(async () => {

@@ -44,8 +44,11 @@ const abcDiatypeMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "braden.lol",
+  title: "Braden",
   metadataBase: new URL(BASE_URL),
+  openGraph: {
+    siteName: "Braden",
+  },
 };
 
 const RootLayout = memo<PropsWithChildren>(({ children }) => {
